@@ -1,0 +1,42 @@
+<section id="view-workspace" class="view-section hidden">
+  <div class="split-grid">
+    <!-- LEFT PANE: INPUT + RAW SOLUTION CODE -->
+    <div class="pane">
+      <div class="pane-header">
+        <span>STEP 01 // SOURCE INPUT & SOLUTION CODE</span>
+        <span class="mono-muted">ai_draft.py</span>
+      </div>
+      <div class="pane-body">
+        <label class="field-label">LEETCODE PROBLEM URL</label>
+        <input type="text" id="input-url" class="text-input" placeholder="https://leetcode.com/problems/3sum/" />
+
+        <label class="field-label">PERSONAL NOTES / WHERE YOU GOT STUCK (OPTIONAL)</label>
+        <input type="text" id="input-notes" class="text-input" placeholder="e.g., Forgot to skip duplicate left pointers initially" />
+
+        <label class="field-label">SUBMITTED SOLUTION CODE</label>
+        <textarea id="input-code" class="code-textarea" spellcheck="false" placeholder="Paste your working Python / C++ / TS / Java code here..."></textarea>
+
+        <div class="action-row">
+          <button id="btn-run-ai" class="btn btn-primary">01_GENERATE_AI_DRAFT</button>
+          <button id="btn-load-template" class="btn btn-secondary">LOAD_BLANK_TEMPLATE</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT PANE: EDITABLE PROBLEM_DRAFT.TXT & FORGE TRIGGER -->
+    <div class="pane">
+      <div class="pane-header">
+        <span>STEP 02 // REVIEW & EDIT problem_draft.txt</span>
+        <span class="mono-muted">dsa_forge.py</span>
+      </div>
+      <div class="pane-body">
+        <label class="field-label">STRUCTURED DRAFT BUFFER (EDITABLE BEFORE FORGING)</label>
+        <textarea id="input-draft" class="code-textarea draft-textarea" spellcheck="false"></textarea>
+
+        <div class="action-row">
+          <button id="btn-forge-files" class="btn btn-success">02_FORGE_SOLUTION_&_UPDATE_README</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,40 @@
+<section id="view-dashboard" class="view-section">
+  <div class="filter-bar">
+    <input type="text" id="filter-search" class="text-input search-input" placeholder="Filter by title, takeaway, or pattern..." />
+    <select id="filter-pattern" class="select-input">
+      <option value="ALL">ALL PATTERNS</option>
+    </select>
+    <select id="filter-revisit" class="select-input">
+      <option value="ALL">ALL STATUS</option>
+      <option value="🔴">🔴 NEEDS REVISIT</option>
+      <option value="🟡">🟡 REVIEW SOON</option>
+      <option value="🟢">🟢 MASTERED</option>
+    </select>
+  </div>
+
+  <div class="table-wrapper">
+    <table class="dsa-table">
+      <thead>
+        <tr>
+          <th>DATE</th>
+          <th>PROBLEM</th>
+          <th>PATTERN</th>
+          <th>DIFF</th>
+          <th>1-SENTENCE TAKEAWAY</th>
+          <th>REV</th>
+          <th>FILE</th>
+        </tr>
+      </thead>
+      <tbody id="problems-tbody"></tbody>
+    </table>
+  </div>
+
+  <!-- CODE & THOUGHT PROCESS INSPECTOR DRAWER -->
+  <div id="code-inspector" class="inspector-panel hidden">
+    <div class="pane-header">
+      <span id="inspector-title">FILE_INSPECTOR</span>
+      <button id="btn-close-inspector" class="btn btn-secondary">CLOSE [X]</button>
+    </div>
+    <pre id="inspector-content" class="inspector-pre"></pre>
+  </div>
+</section>
