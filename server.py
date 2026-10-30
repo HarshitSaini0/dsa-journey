@@ -292,7 +292,7 @@ class DSAHandler(SimpleHTTPRequestHandler):
 
         client = genai.Client(api_key=api_key)
         resp = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-3.1-flash-lite",
             contents=user_prompt,
             config=genai.types.GenerateContentConfig(
                 system_instruction=SYSTEM_PROMPT, temperature=0.2

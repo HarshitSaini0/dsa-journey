@@ -15,6 +15,7 @@ venv/
 *.egg-info/
 dist/
 build/
+test.py
 
 # --- IDEs & Editors ---
 .vscode/
