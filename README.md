@@ -1,0 +1,1 @@
+| 2026-10-30 | [6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) | `arrays-hashing` | Medium | Simulate the zigzag movement using a direction flag to toggle between incrementing and decrementing the row index. | 🟢 | [Code](./arrays-hashing/6_zigzag_conversion.py) |

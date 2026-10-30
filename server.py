@@ -372,7 +372,7 @@ class DSAHandler(SimpleHTTPRequestHandler):
       try:
         subprocess.run(["git", "add", "README.md"], check=True)
         subprocess.run(
-            ["git", "add", "--all", ":!.env", f":!{DRAFT_FILE}"], check=True
+            ["git", "add", "--all"], check=True
         )
         commit_res = subprocess.run(
             ["git", "commit", "-m", msg], capture_output=True, text=True
